@@ -1,2 +1,2 @@
 # DownloadProductPicture
-mall..
+使用python selenium模块获取商品图片
