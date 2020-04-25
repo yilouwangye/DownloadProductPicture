@@ -105,4 +105,5 @@ def main():
             save_file(item['url'],file+'/'+sku['sku_num']+'/description/'+str(item['index'])+'.jpg')
         time.sleep(5)
 if __name__ == '__main__':
+    '''multiprocess模块提升运行速度'''
     main()
