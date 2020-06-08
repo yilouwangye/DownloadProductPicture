@@ -105,8 +105,7 @@ class productPictrue():
                 if not os.path.exists(sku['sku_num']):
                     os.makedirs(path+'/'+sku['sku_num']+'/1000X1000')
                     os.makedirs(path+'/'+sku['sku_num']+'/description')
-            except Exception as e:
-                print(e)
+            except Exception:
                 print('文件已存在')
             for item in self.get_main_img(html):
                 self.save_file(item['url'],path+'/'+sku['sku_num']+'/1000X1000/'+str(item['index'])+'.jpg')
