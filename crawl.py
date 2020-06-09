@@ -36,7 +36,6 @@ class productPictrue():
         :return:
         '''
         try:
-            self.driver.get(html)
             time.sleep(5)
             main_img_url = self.wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR,'.van-swipe-item img')))
             for i, item in enumerate(main_img_url):
